@@ -6,7 +6,7 @@ replicaCount: 1
 namespace: helm-guestbook
 image:
   repository: docker.io/odrodrig/guestbook
-  tag: 24
+  tag: 25
   pullPolicy: IfNotPresent
 
 service:
