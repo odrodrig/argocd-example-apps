@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: docker.io/odrodrig/guestbook
-  tag: 22
+  tag: 23
   pullPolicy: IfNotPresent
 
 service:
