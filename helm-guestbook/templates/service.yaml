@@ -13,6 +13,7 @@ spec:
     - targetPort: http
       protocol: TCP
       name: http
+      port: 3000
   selector:
     app: {{ template "helm-guestbook.name" . }}
     release: {{ .Release.Name }}
