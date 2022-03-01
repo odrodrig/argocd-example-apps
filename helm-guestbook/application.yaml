@@ -8,9 +8,9 @@ metadata:
 spec:
   destination:
     namespace: helm-guestbook
-    server: svc.cluster.local
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: helm-guestbook
-    repoURL: https://github.com/odrodrig/argocd-example-apps.git
+    repoURL: https://github.com/odrodrig/argocd-example-apps
     targetRevision: HEAD
