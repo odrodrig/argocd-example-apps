@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-guestbook-v2
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    chart: helm-guestbook
+    repoURL: https://odrodrig.github.io/helm-charts/
+    targetRevision: "*"
+    helm:
+      releaseName: helm-guestbook-v2
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: guestbook
